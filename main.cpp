@@ -17,12 +17,12 @@ video: Chapter 2 - Part 3
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t) here: 
  
  
- 
- 
- 
- 
- 
- 
+ int
+ float 
+ bool
+ double
+ char
+ unsigned int
  
  
  
@@ -56,10 +56,31 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
-    
-    
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    int itemsInCart = 10;
+    int vehicleWheels = 3;
+    int apples = 8;
+
+    float result = 9.5f;
+    float remainder = 0.4f;
+    float constant = 450.0f;
+
+    bool isValid = true;
+    bool isOn = false;
+    bool isUpdated = 1;
+
+    char nextValue = {'h'};
+    char letter = {'g'};
+    char type = {'e'};
+
+    double distance = 19774.3399450994;
+    double width =  0.39905000489;
+    double fraction = 1.00934777433;
+
+    unsigned int member = 32;
+    unsigned int cue = 203978843;
+    unsigned int serial  = 743;
+
+    ignoreUnused(number, itemsInCart, vehicleWheels, apples, result, remainder, constant, isValid, isOn, isUpdated, nextValue, letter, type, distance, width, fraction, member, cue, serial); //passing each variable declared to the ignoreUnused() function
 }
 /*
  10 functions
@@ -74,43 +95,79 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-
+bool studentPassedExam(int studentGrade, int minimumGradeToPass = 60) 
+{
+  ignoreUnused(studentGrade, minimumGradeToPass);
+  return {};
+}
 /*
  2)
  */
-
+int sumIntegers(int lhs,int rhs) 
+{
+  ignoreUnused(lhs, rhs);
+  return {};
+}
 /*
  3)
  */
-
+void createWindow(double width = 50, double height = 50)
+{
+  ignoreUnused(width, height);
+}
 /*
  4)
  */
-
+void moveObject(float distance, char object)
+{
+  ignoreUnused(distance, object);
+}
 /*
  5)
  */
-
+double calculateArea(double sideA, double sideB)
+{
+  ignoreUnused(sideA, sideB);
+  return {};
+}
 /*
  6)
  */
-
+void playSoundWave(float freq)
+{
+  ignoreUnused(freq);
+}
 /*
  7)
  */
-
+double percentageOf(double amount, double total = 4000)
+{
+  ignoreUnused(amount, total);
+  return {};
+}
 /*
  8)
  */
-
+double checkSpeed(double distance, double time)
+{
+  ignoreUnused(distance, time);
+  return {};
+}
 /*
  9)
  */
-
+bool validateToken(double token)
+{
+  ignoreUnused(token);
+  return {};
+}
 /*
  10)
  */
-
+void increaseVolumeBy(int decibels ) 
+{
+  ignoreUnused(decibels);
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -131,27 +188,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto studentPassed = studentPassedExam(40);
     //2)
-    
+    auto sum = sumIntegers(5,4);
     //3)
-    
+    createWindow();
     //4)
-    
+    moveObject(10.0f,'h');
     //5)
-    
+    auto area = calculateArea(100,50);
     //6)
-    
+    playSoundWave(440.0f);
     //7)
-    
+    auto percentage = percentageOf(300);
     //8)
-    
+    auto speed = checkSpeed(100,30);
     //9)
-    
+    auto isValid = validateToken(22.222998794);
     //10)
+    increaseVolumeBy(20);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, studentPassed, sum, area, percentage, speed, isValid);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
