@@ -97,76 +97,76 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
 bool studentPassedExam(int studentGrade, int minimumGradeToPass = 60) 
 {
-  ignoreUnused(studentGrade, minimumGradeToPass);
-  return {};
+    ignoreUnused(studentGrade, minimumGradeToPass);
+    return {};
 }
 /*
  2)
  */
 int sumIntegers(int lhs,int rhs) 
 {
-  ignoreUnused(lhs, rhs);
-  return {};
+    ignoreUnused(lhs, rhs);
+    return {};
 }
 /*
  3)
  */
 void createWindow(double width = 50, double height = 50)
 {
-  ignoreUnused(width, height);
+    ignoreUnused(width, height);
 }
 /*
  4)
  */
 void moveObject(float distance, char object)
 {
-  ignoreUnused(distance, object);
+    ignoreUnused(distance, object);
 }
 /*
  5)
  */
 double calculateArea(double sideA, double sideB)
 {
-  ignoreUnused(sideA, sideB);
-  return {};
+    ignoreUnused(sideA, sideB);
+    return {};
 }
 /*
  6)
  */
 void playSoundWave(float freq)
 {
-  ignoreUnused(freq);
+    ignoreUnused(freq);
 }
 /*
  7)
  */
 double percentageOf(double amount, double total = 4000)
 {
-  ignoreUnused(amount, total);
-  return {};
+    ignoreUnused(amount, total);
+    return {};
 }
 /*
  8)
  */
 double checkSpeed(double distance, double time)
 {
-  ignoreUnused(distance, time);
-  return {};
+    ignoreUnused(distance, time);
+    return {};
 }
 /*
  9)
  */
 bool validateToken(double token)
 {
-  ignoreUnused(token);
-  return {};
+    ignoreUnused(token);
+    return {};
 }
 /*
  10)
  */
 void increaseVolumeBy(int decibels ) 
 {
-  ignoreUnused(decibels);
+    ignoreUnused(decibels);
 }
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
